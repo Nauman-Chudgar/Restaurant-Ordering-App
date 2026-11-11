@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/images/header.png" alt="A picture containing pizza and other items for the app.">
+    </header>
+
+    <main id="main"></main>
+
+    <section class="modal" id="modal">
+        <h2>
+            Enter Card Details
+        </h2>
+        
+        <form id="form">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="Nauman chudgar" required>
+
+            <label for="cardNumber">Enter card number:</label>
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="2343-2340-8394" required>
+
+            <label for="cvv">Enter CVV:</label>
+            <input type="text" name="cvv" id="cvv" placeholder="142" required>
+
+            <button class="order-btn wi" type="submit">Pay</button>
+        </form>
+    </section>
+
+    <footer class="hidden" id="foot">
+        <h2 class="foot-heading">Your order</h2>
+        <section class="foot-section" id="order-price"></section>
+        <section class="total-price">
+            <h2>Total price:</h2>
+            <h2 class="price" id="total-price"></h2>
+        </section>
+        <button class="order-btn" id="order-btn">Complete order</button>
+    </footer>
+    <script src="/index.js" type="module"></script>
+</body>
+</html>
